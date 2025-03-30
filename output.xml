@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-29T19:50:06.304582" rpa="false" schemaversion="5">
+<suite id="s1" name="Hr-Ecms" source="c:\Users\user\Desktop\ecms-autotest\hr-ecms.robot">
+<test id="s1-t1" name="TC-HR-14 Open Emp" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-29T19:50:06.474155" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/ecms/login'.</msg>
+<arg>http://localhost:3000/ecms/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-29T19:50:06.473894" elapsed="1.970346"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-29T19:50:08.445961" elapsed="0.035864"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-29T19:50:08.482949" level="INFO">Typing text 'hsy' into text field 'email'.</msg>
+<arg>email</arg>
+<arg>hsy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-29T19:50:08.482460" elapsed="0.062984"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-03-29T19:50:08.546133" level="INFO">Typing password into text field 'password'.</msg>
+<msg time="2025-03-29T19:50:08.564103" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>password</arg>
+<arg>1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-29T19:50:08.545882" elapsed="0.048092"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-29T19:50:08.594599" level="INFO">Clicking element 'submit'.</msg>
+<arg>submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-29T19:50:08.594384" elapsed="0.046672"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-29T19:50:11.642421" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-29T19:50:08.641561" elapsed="3.001520"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-29T19:50:11.645638" level="INFO">Clicking element 'emp'.</msg>
+<arg>emp</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-29T19:50:11.644853" elapsed="0.066677"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-29T19:50:14.713227" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-29T19:50:11.711949" elapsed="3.001819"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-29T19:50:14.716093" level="INFO">Clicking element 'open-0'.</msg>
+<arg>open-0</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-29T19:50:14.715229" elapsed="0.080981"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-29T19:50:17.797949" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-29T19:50:14.797140" elapsed="3.001202"/>
+</kw>
+<status status="PASS" start="2025-03-29T19:50:06.473078" elapsed="11.326311"/>
+</test>
+<doc>Robot Framework test suite for ECMS</doc>
+<status status="PASS" start="2025-03-29T19:50:06.307582" elapsed="11.496049"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Hr-Ecms" id="s1" pass="1" fail="0" skip="0">Hr-Ecms</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
