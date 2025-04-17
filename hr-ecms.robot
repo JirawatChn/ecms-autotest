@@ -446,3 +446,44 @@ TC-HR-43
     Click Element    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[3]/div[2]/select
     Sleep    0.5s
     Select From List By Value    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[3]/div[2]/select    10
+
+TC-HR-44
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Wait Until Element Is Visible    courseId
+    Input Text    courseId   Test_robot_createcourse
+    Input Text    courseName    Test_robot_createcourse
+    Click Button    submit
+TC-HR-45
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Wait Until Element Is Visible    courseId
+    Input Text    courseName    Test_robot_createcourse
+    Click Button    submit
+    Sleep    5s
+
+TC-HR-46
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Wait Until Element Is Visible    courseId
+    Input Text    courseId   Test_robot_createcourse
+    Click Button    submit
+    Sleep    5s
+TC-HR-47
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Wait Until Element Is Visible    courseId
+    Click Button    submit
+    Sleep    5s
