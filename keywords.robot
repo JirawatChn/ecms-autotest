@@ -13,7 +13,7 @@ Login to ECMS
     Input Text    email    ${email}
     Input Password    password    ${password}
     Click Element    submit
-    Sleep    2s
+    Sleep    0.5s
 
 Check Value By ID
     [Arguments]    ${id}    ${expected}

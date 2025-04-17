@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Robot Framework test suite for ECMS
 Library    SeleniumLibrary
-Library    XML
 
 *** Settings ***
 Resource     ./keywords.robot
