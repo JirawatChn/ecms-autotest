@@ -9,7 +9,7 @@ Resource     ./keywords.robot
 TC-EMP-01
     Login to ECMS    emp    admin
 TC-EMP-02
-    Open Browser    http://localhost:3000/ecms/login    chorme
+    Open Browser    http://localhost:3000/ecms/login    chrome
     Maximize Browser Window
     Input Text    email    emp
     Click Element    submit
