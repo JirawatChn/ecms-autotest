@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${URL}      http://localhost:3000/ecms/login
-${BROWSER}  chorme
+${BROWSER}  chrome
 
 *** Keywords ***
 Login to ECMS
