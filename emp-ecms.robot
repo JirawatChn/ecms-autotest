@@ -30,7 +30,6 @@ TC-EMP-05
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    details
     Click Element    details
-    Close Browser
     Sleep    2s
     Check Value By ID    empId              EMP002
     Check Value By ID    empName            jirawat
@@ -174,7 +173,6 @@ TC-EMP-19
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    trainings
     Click Element    trainings
-    Close Browser
     Sleep    2s
     Element Text Should Be    courseId-0    C012
     Element Text Should Be    sessionId-0    S001
