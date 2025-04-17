@@ -24,6 +24,7 @@ TC-HR-04
 
 TC-HR-05
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Wait Until Element Is Visible    //*[@id="content-wrapper"]/div[2]/div/div/div[1]    
     Click Button    create
@@ -37,6 +38,7 @@ TC-HR-05
 
 TC-HR-06
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Sleep    2s
     Click Button    create
@@ -49,6 +51,7 @@ TC-HR-06
 
 TC-HR-07
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Wait Until Element Is Visible    open-0    
     Click Element    open-0
@@ -64,6 +67,7 @@ TC-HR-07
 
 TC-HR-08
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Wait Until Element Is Visible    open-4   
     Click Element    open-4
@@ -75,10 +79,12 @@ TC-HR-08
 
 TC-HR-09
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
 
 TC-HR-10
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Wait Until Element Is Visible    open-0
     Click Button    open-0
@@ -103,12 +109,14 @@ TC-HR-10
 
 TC-HR-11
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Wait Until Element Is Visible    all
     Click Element    all
 
 TC-HR-12
     Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Wait Until Element Is Visible    nextButton
     Click Element    nextButton
@@ -119,6 +127,7 @@ TC-HR-13
 
 TC-HR-14
     Login to ECMS    hsy    1234        
+    Wait Until Element Is Visible    emp
     Click Element    emp
     Wait Until Element Is Visible    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[3]/div[2]/select
     Click Element    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[3]/div[2]/select
@@ -127,12 +136,14 @@ TC-HR-14
 
 TC-HR-15
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
 
 TC-HR-16
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -140,7 +151,8 @@ TC-HR-16
     Click Element    all
 
 TC-HR-17 - TC-HR-18 
-    Login to ECMS    hsy    1234  
+    Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -156,6 +168,7 @@ TC-HR-17 - TC-HR-18
 
 TC-HR-19
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -172,6 +185,7 @@ TC-HR-19
 
 TC-HR-20
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -182,6 +196,7 @@ TC-HR-20
 
 TC-HR-21
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -192,6 +207,7 @@ TC-HR-21
 
 TC-HR-22
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -204,6 +220,7 @@ TC-HR-22
 
 TC-HR-23
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -216,6 +233,7 @@ TC-HR-23
 
 TC-HR-24
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    withdraw
     Click Element    withdraw
@@ -230,12 +248,14 @@ TC-HR-24
 
 TC-HR-25
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
 
 TC-HR-26
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -244,6 +264,7 @@ TC-HR-26
 
 TC-HR-27 - TC-HR-28
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -259,6 +280,7 @@ TC-HR-27 - TC-HR-28
 
 TC-HR-29
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -277,6 +299,7 @@ TC-HR-29
 
 TC-HR-30
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -287,6 +310,7 @@ TC-HR-30
 
 TC-HR-31
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -297,6 +321,7 @@ TC-HR-31
 
 TC-HR-32
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -309,6 +334,7 @@ TC-HR-32
 
 TC-HR-33
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -321,6 +347,7 @@ TC-HR-33
 
 TC-HR-34
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    requests
     Click Element    requests
     Wait Until Element Is Visible    reim
     Click Element    reim
@@ -334,22 +361,26 @@ TC-HR-34
 
 TC-HR-35
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
 
 TC-HR-36
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    all
     Click Element    all
 
 TC-HR-37
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    open-0
     Click Element    open-0
     # เขียน element text should be ตาม test case
 TC-HR-38
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    open-0
     Click Element    open-0
@@ -358,6 +389,7 @@ TC-HR-38
     Wait Until Element Is Visible    modal-pass
 TC-HR-39
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    open-0
     Click Element    open-0
@@ -368,6 +400,7 @@ TC-HR-39
 
 TC-HR-40
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    open-0
     Click Element    open-0
@@ -379,6 +412,7 @@ TC-HR-40
 
 TC-HR-41
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    all
     Click Element    all
@@ -391,6 +425,7 @@ TC-HR-41
 
 TC-HR-42
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    all
     Click Element    all
@@ -403,6 +438,7 @@ TC-HR-42
 
 TC-HR-43
     Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    results
     Click Element    results
     Wait Until Element Is Visible    all
     Click Element    all

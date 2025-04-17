@@ -19,11 +19,14 @@ TC-EMP-03
 
 TC-EMP-04
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    details
     Click Element    details
 
 TC-EMP-05
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    details
     Click Element    details
+    Sleep    2s
     Check Value By ID    empId              EMP002
     Check Value By ID    empName            jirawat
     Check Value By ID    department         aaa
@@ -35,7 +38,7 @@ TC-EMP-05
     Check Value By ID    nextExpiryDate    363
 
 TC-EMP-06
-    Open Browser    http://localhost:3000/ecms/emp/details    edge
+    Open Browser    http://localhost:3000/ecms/emp/details    chrome
 
 TC-EMP-07
     Login to ECMS    emp    admin
@@ -43,10 +46,11 @@ TC-EMP-07
 
 TC-EMP-08 - TC-EMP-11
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    empId
     Element Text Should Be    empId   ID: EMP002
     Element Text Should Be    empName   jirawat
     Element Text Should Be    department    แผนก: aaa
-    Element Text Should Be    tel    หมายเลขโทรศัพท์: 11111
+    Element Text Should Be    tel    หมายเลขโทรศัพท์: 0811111111
     Element Text Should Be    email    อีเมล: emp
     Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก: 2022-11-30
     Element Text Should Be    expiryDate   วันหมดอายุการอบรม: 2026-04-13
@@ -97,10 +101,12 @@ TC-EMP-08 - TC-EMP-11
 
 TC-EMP-12
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    course
     Click Element    course
 
 TC-EMP-13
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    course
     Click Element    course
     Sleep    3s
     Click Element    open-0
@@ -111,6 +117,7 @@ TC-EMP-13
 
 TC-EMP-14
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    course
     Click Element    course
     Sleep    3s
     Click Element    open-0
@@ -119,6 +126,7 @@ TC-EMP-14
 
 TC-EMP-15
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    course
     Click Element    course
     Sleep    3s
     Click Element    open-0
@@ -129,22 +137,26 @@ TC-EMP-15
 
 TC-EMP-16
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    course
     Click Element    course
     Sleep    3s
     Click Element    open-0
 
 TC-EMP-17
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    course
     Click Element    course
     Sleep    3s
     Click Element    add-remove
 
 TC-EMP-18
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
 
 TC-EMP-19
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    2s
     Element Text Should Be    courseId-0    C012
@@ -155,12 +167,14 @@ TC-EMP-19
 
 TC-EMP-20
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    3s
     Click Element    open-0
 
 TC-EMP-21
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    3s
     Click Element    open-0
@@ -175,12 +189,14 @@ TC-EMP-21
     
 TC-EMP-22
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    3s
     Click Element    history
 
 TC-EMP-23
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    3s
     Click Element    history
@@ -193,6 +209,7 @@ TC-EMP-23
 
 TC-EMP-24
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    3s
     Click Element    history
@@ -200,6 +217,7 @@ TC-EMP-24
 
 TC-EMP-25
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    3s
     Click Element    history
@@ -218,6 +236,7 @@ TC-EMP-25
 
 TC-EMP-26
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    3s
     Click Element    history
@@ -227,11 +246,13 @@ TC-EMP-26
 
 TC-EMP-27
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
 
 TC-EMP-28
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
     Element Text Should Be    reqId-4    R001
@@ -243,12 +264,14 @@ TC-EMP-28
 
 TC-EMP-29
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
     Click Button    request
 
 TC-EMP-30
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
     Click Button    request
@@ -260,6 +283,7 @@ TC-EMP-30
 
 TC-EMP-31
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
     Click Button    request
@@ -268,6 +292,7 @@ TC-EMP-31
 
 TC-EMP-32
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
     Click Button    open-4
@@ -286,10 +311,12 @@ TC-EMP-32
 
 TC-EMP-33
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    manage
     Click Element    manage
 
 TC-EMP-34
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    manage
     Click Element    manage
     Sleep    2s
     Element Text Should Be    courseId-0    C012
@@ -301,6 +328,7 @@ TC-EMP-34
 
 TC-EMP-35 - TC-EMP-36
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    manage
     Click Element    manage
     Sleep    2s
     Click Button    delete-0
@@ -309,6 +337,7 @@ TC-EMP-35 - TC-EMP-36
 
 TC-EMP-37
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    manage
     Click Element    manage
     Sleep    2s
     Click Button    delete-0
@@ -317,12 +346,14 @@ TC-EMP-37
 
 TC-EMP-38
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    manage
     Click Element    manage
     Sleep    2s
     Click Button    add-course
 
 TC-EMP-39
     Login to ECMS    emp    admin
+    Wait Until Element Is Visible    manage
     Click Element    manage
     Sleep    2s
     

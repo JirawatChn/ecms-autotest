@@ -8,12 +8,17 @@ ${BROWSER}  chrome
 *** Keywords ***
 Login to ECMS
     [Arguments]    ${email}    ${password}
-    Open Browser    ${URL}    ${BROWSER}
+    ${chrome options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${chrome options}    add_argument    --incognito
+    Create Webdriver    Chrome    options=${chrome options}
+    Go To    ${URL}
     Maximize Browser Window
     Input Text    email    ${email}
     Input Password    password    ${password}
     Click Element    submit
     Sleep    0.5s
+
+
 
 Check Value By ID
     [Arguments]    ${id}    ${expected}
