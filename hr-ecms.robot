@@ -488,3 +488,10 @@ TC-HR-47
     Wait Until Element Is Visible    courseId
     Click Button    submit
     Sleep    5s
+TC-HR-48
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-session
+    Click Element    create-session
+    Sleep    5s
