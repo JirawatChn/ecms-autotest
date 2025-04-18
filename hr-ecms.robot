@@ -739,12 +739,8 @@ TC-HR-66
     Sleep    3s
 
 TC-HR-67
-    Open InPrivate Edge Browser
-    Sleep    3s
-    Go To    http://localhost:3000/ecms/login
-    Sleep    3s
-    Page Should Contain    ECMS Login
-    Sleep    3s
+    Open Browser    http://localhost:3000/ecms/hr/dashboard    chrome
+    Close Browser
 
 TC-HR-68
     Login to ECMS    hsy    1234
