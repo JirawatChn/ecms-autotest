@@ -799,3 +799,24 @@ TC-HR-72
     #Capture Page Screenshot
     Sleep   3s
 
+TC-HR-73
+    login to ECMS   hsy     1234
+    Open My Profile
+    Sleep   3s
+    Click Element   xpath=//*[@id="edit-button"]
+    Sleep   3s
+    Click Element   id=back
+    Sleep   3s
+
+TC-HR-74
+    login to ECMS   hsy     1234
+    Open My Profile
+    Sleep   3s
+    Click Element   id=back
+    Sleep   3s
+
+TC-HR-75
+    login to ECMS   hsy     1234
+    Sleep   3s
+    Open Logout
+    Sleep   3s

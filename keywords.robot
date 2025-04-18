@@ -36,3 +36,9 @@ Open My Profile
     Click Element    id=dropdown
     Sleep    5s
     Click Element    id=my-profile
+
+Open Logout
+    Wait Until Element Is Visible    id=dropdown    10s
+    Click Element    id=dropdown
+    Sleep    5s
+    Click Element    id=logout
