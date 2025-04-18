@@ -494,7 +494,21 @@ TC-HR-48
     Click Element    courses
     Wait Until Element Is Visible    create-session
     Click Element    create-session
-    Sleep    5s
+    Wait Until Element Is Visible    courseLimit
+    Click Element    select-course
+    Wait Until Element Is Visible    Test
+    Click Element    Test
+    Input Text    courseLimit    100
+    Sleep    2s
+    Input Text    hours    12
+    Sleep    2s
+    Input Text    periods    TEST
+    Sleep    2s
+    Input Text    trainingLocation    TEST
+    Sleep    2s
+    Input Text    trainingDate    20042570
+    Sleep    3s
+    Click Button    submit
 TC-HR-49
     Login to ECMS    hsy    1234  
     Wait Until Element Is Visible    courses
@@ -512,4 +526,23 @@ TC-HR-49
     Sleep    2s
     Input Text    trainingDate    12121234
     Sleep    3s
+    Click Button    submit
+TC-HR-50
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-session
+    Click Element    create-session
+    Wait Until Element Is Visible    courseLimit
+    Click Element    select-course
+    Wait Until Element Is Visible    Test
+    Click Element    Test
+    Input Text    courseLimit    100
+    Sleep    2s
+    Input Text    hours    12
+    Sleep    2s
+    Input Text    periods    TEST
+    Sleep    2s
+    Input Text    trainingLocation    TEST
+    Sleep    2s
     Click Button    submit
