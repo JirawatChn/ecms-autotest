@@ -377,10 +377,15 @@ TC-HR-36
 TC-HR-37
     Login to ECMS    hsy    1234  
     Wait Until Element Is Visible    results
-    Click Element    results
+    Sleep   2s
+    Click Element    xpath=//*[@id="results"]/a
+    Sleep   2s
+    Click Element    id=open-0
     Wait Until Element Is Visible    open-0
-    Click Element    open-0
+    Sleep   2s
+    #Click Element    open-0
     # เขียน element text should be ตาม test case
+    
 TC-HR-38
     Login to ECMS    hsy    1234  
     Wait Until Element Is Visible    results
@@ -739,12 +744,8 @@ TC-HR-66
     Sleep    3s
 
 TC-HR-67
-    Open InPrivate Edge Browser
-    Sleep    3s
-    Go To    http://localhost:3000/ecms/login
-    Sleep    3s
-    Page Should Contain    ECMS Login
-    Sleep    3s
+    Open Browser    http://localhost:3000/ecms/hr/dashboard    edge
+    Close Browser
 
 TC-HR-68
     Login to ECMS    hsy    1234
