@@ -37,3 +37,9 @@ Open Logout
     Click Element    id=dropdown
     Sleep    5s
     Click Element    id=logout
+
+Capture and Close
+    Sleep    3s
+    Capture Page Screenshot
+    Sleep    1s
+    Close Browser
