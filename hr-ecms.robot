@@ -590,3 +590,148 @@ TC-HR-54
     Click Element    course
     Click Element    all
     Sleep    3s
+TC-HR-55
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    start-2
+    Click Button    start-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Sleep    3s
+TC-HR-56
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    start-2
+    Click Button    start-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Sleep    3s
+TC-HR-57
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    close-2
+    Click Button    close-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Sleep    3s
+TC-HR-58
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    close-2
+    Click Button    close-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Sleep    3s
+TC-HR-59
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    ongoing
+    Wait Until Element Is Visible    complete-0
+    Click Button    complete-0
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Sleep    3s 
+TC-HR-60
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    ongoing
+    Wait Until Element Is Visible    complete-0
+    Click Button    complete-0
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Sleep    3s 
+TC-HR-61
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    detail-0
+    Click Button    detail-0
+    Sleep    3s 
+TC-HR-62
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    detail-0
+    Click Button    detail-0
+    Wait Until Element Is Visible    edit-button
+    Click Button    edit-button
+    Wait Until Element Is Visible    courseLimit
+    Input Text    courseLimit    99
+    Input Text    hours    10
+    Input Text    periods    test
+    Input Text    trainingLocation    test
+    Input Text    trainingDate    05182026
+    Click Button    submit
+    Sleep    3s 
+TC-HR-63
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    detail-0
+    Click Button    detail-0
+    Wait Until Element Is Visible    edit-button
+    Click Button    edit-button
+    Wait Until Element Is Visible    courseLimit
+    Input Text    courseLimit    99
+    Input Text    hours    10
+    Clear Element Text    periods
+    Clear Element Text    trainingLocation
+    Click Button    submit
+    Sleep    3s 
+TC-HR-64
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Wait Until Element Is Visible    courseId
+    Sleep    3s
+    Click Button    back
+TC-HR-65
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Sleep    3s
+    Wait Until Element Is Visible    courseId
+    Click Button    forward
+    Wait Until Element Is Visible    sessionId
+    Sleep    3s
+TC-HR-66
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Sleep    3s
+    Wait Until Element Is Visible    courseId
+    Click Button    forward
+    Wait Until Element Is Visible    sessionId
+    Sleep    3s
+    Click Button    back
+    Sleep    3s
