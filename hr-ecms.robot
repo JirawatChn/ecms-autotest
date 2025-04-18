@@ -546,3 +546,47 @@ TC-HR-50
     Input Text    trainingLocation    TEST
     Sleep    2s
     Click Button    submit
+TC-HR-51
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-session
+    Click Element    create-session
+    Wait Until Element Is Visible    courseLimit
+    Click Element    select-course
+    Wait Until Element Is Visible    Test
+    Click Element    Test
+    Input Text    courseLimit    100
+    Sleep    2s
+    Input Text    hours    12
+    Sleep    2s
+    Input Text    periods    TEST
+    Sleep    2s
+    Input Text    trainingLocation    TEST
+    Sleep    2s
+    Input Text    trainingDate    20042570
+    Sleep    3s
+    Click Button    submit
+TC-HR-52
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Sleep    3s 
+TC-HR-53
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    ongoing
+    Sleep    3s 
+TC-HR-54
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    all
+    Sleep    3s
