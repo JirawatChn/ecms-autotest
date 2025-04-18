@@ -819,4 +819,4 @@ TC-HR-75
     login to ECMS   hsy     1234
     Sleep   3s
     Open Logout
-    Sleep   3s
+    Sleep   3s  
