@@ -24,3 +24,9 @@ Check Value By ID
     [Arguments]    ${id}    ${expected}
     ${value}=    SeleniumLibrary.Get Element Attribute    id=${id}    value
     Should Be Equal    ${value}    ${expected}
+
+
+Open InPrivate Edge Browser
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].EdgeOptions()    sys, selenium.webdriver
+    Call Method    ${options}    add_argument    --inprivate
+    Create Webdriver    Edge    options=${options}

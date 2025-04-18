@@ -495,3 +495,4 @@ TC-HR-48
     Wait Until Element Is Visible    create-session
     Click Element    create-session
     Sleep    5s
+
