@@ -30,3 +30,9 @@ Open InPrivate Edge Browser
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].EdgeOptions()    sys, selenium.webdriver
     Call Method    ${options}    add_argument    --inprivate
     Create Webdriver    Edge    options=${options}
+
+Open My Profile
+    Wait Until Element Is Visible    id=dropdown    10s
+    Click Element    id=dropdown
+    Sleep    5s
+    Click Element    id=my-profile

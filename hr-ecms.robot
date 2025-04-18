@@ -6,6 +6,8 @@ Library    DateTime
 *** Settings ***
 Resource     ./keywords.robot
 
+*** Variables ***
+${EMPTY}
 
 *** Test Cases ***
 TC-HR-01
@@ -494,5 +496,306 @@ TC-HR-48
     Click Element    courses
     Wait Until Element Is Visible    create-session
     Click Element    create-session
+    Wait Until Element Is Visible    courseLimit
+    Click Element    select-course
+    Wait Until Element Is Visible    Test
+    Click Element    Test
+    Input Text    courseLimit    100
+    Sleep    2s
+    Input Text    hours    12
+    Sleep    2s
+    Input Text    periods    TEST
+    Sleep    2s
+    Input Text    trainingLocation    TEST
+    Sleep    2s
+    Input Text    trainingDate    20042570
+    Sleep    3s
+    Click Button    submit
+TC-HR-49
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-session
+    Click Element    create-session
+    Wait Until Element Is Visible    courseLimit
+    Input Text    courseLimit    100
+    Sleep    2s
+    Input Text    hours    12
+    Sleep    2s
+    Input Text    periods    TEST
+    Sleep    2s
+    Input Text    trainingLocation    TEST
+    Sleep    2s
+    Input Text    trainingDate    12121234
+    Sleep    3s
+    Click Button    submit
+TC-HR-50
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-session
+    Click Element    create-session
+    Wait Until Element Is Visible    courseLimit
+    Click Element    select-course
+    Wait Until Element Is Visible    Test
+    Click Element    Test
+    Input Text    courseLimit    100
+    Sleep    2s
+    Input Text    hours    12
+    Sleep    2s
+    Input Text    periods    TEST
+    Sleep    2s
+    Input Text    trainingLocation    TEST
+    Sleep    2s
+    Click Button    submit
+TC-HR-51
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-session
+    Click Element    create-session
+    Wait Until Element Is Visible    courseLimit
+    Click Element    select-course
+    Wait Until Element Is Visible    Test
+    Click Element    Test
+    Input Text    courseLimit    100
+    Sleep    2s
+    Input Text    hours    12
+    Sleep    2s
+    Input Text    periods    TEST
+    Sleep    2s
+    Input Text    trainingLocation    TEST
+    Sleep    2s
+    Input Text    trainingDate    20042570
+    Sleep    3s
+    Click Button    submit
+TC-HR-52
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Sleep    3s 
+TC-HR-53
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    ongoing
+    Sleep    3s 
+TC-HR-54
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    all
+    Sleep    3s
+TC-HR-55
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    start-2
+    Click Button    start-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Sleep    3s
+TC-HR-56
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    start-2
+    Click Button    start-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Sleep    3s
+TC-HR-57
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    close-2
+    Click Button    close-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Sleep    3s
+TC-HR-58
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    close-2
+    Click Button    close-2
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Sleep    3s
+TC-HR-59
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    ongoing
+    Wait Until Element Is Visible    complete-0
+    Click Button    complete-0
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[2]
+    Sleep    3s 
+TC-HR-60
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Click Element    ongoing
+    Wait Until Element Is Visible    complete-0
+    Click Button    complete-0
+    Wait Until Element Is Visible    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Click Button    xpath=/html/body/div[3]/div/div/div[2]/button[1]
+    Sleep    3s 
+TC-HR-61
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    detail-0
+    Click Button    detail-0
+    Sleep    3s 
+TC-HR-62
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    detail-0
+    Click Button    detail-0
+    Wait Until Element Is Visible    edit-button
+    Click Button    edit-button
+    Wait Until Element Is Visible    courseLimit
+    Input Text    courseLimit    99
+    Input Text    hours    10
+    Input Text    periods    test
+    Input Text    trainingLocation    test
+    Input Text    trainingDate    05182026
+    Click Button    submit
+    Sleep    3s 
+TC-HR-63
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    course
+    Click Element    course
+    Wait Until Element Is Visible    detail-0
+    Click Button    detail-0
+    Wait Until Element Is Visible    edit-button
+    Click Button    edit-button
+    Wait Until Element Is Visible    courseLimit
+    Input Text    courseLimit    99
+    Input Text    hours    10
+    Clear Element Text    periods
+    Clear Element Text    trainingLocation
+    Click Button    submit
+    Sleep    3s 
+TC-HR-64
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Wait Until Element Is Visible    courseId
+    Sleep    3s
+    Click Button    back
+TC-HR-65
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Sleep    3s
+    Wait Until Element Is Visible    courseId
+    Click Button    forward
+    Wait Until Element Is Visible    sessionId
+    Sleep    3s
+TC-HR-66
+    Login to ECMS    hsy    1234  
+    Wait Until Element Is Visible    courses
+    Click Element    courses
+    Wait Until Element Is Visible    create-course
+    Click Element    create-course
+    Sleep    3s
+    Wait Until Element Is Visible    courseId
+    Click Button    forward
+    Wait Until Element Is Visible    sessionId
+    Sleep    3s
+    Click Button    back
+    Sleep    3s
+
+TC-HR-67
+    Open InPrivate Edge Browser
+    Sleep    3s
+    Go To    http://localhost:3000/ecms/login
+    Sleep    3s
+    Page Should Contain    ECMS Login
+    Sleep    3s
+
+TC-HR-68
+    Login to ECMS    hsy    1234
+    Sleep   5s
+
+TC-HR-69
+    Login to ECMS    hsy    1234
+    Wait Until Element Is Visible    id=dropdown    10s
+    Click Element    id=dropdown
+    # Capture Element Screenshot    xpath=//*[@id="dropdown"]/div   asd.png
+    # Capture Page Screenshot
     Sleep    5s
+
+TC-HR-70
+    Login to ECMS    hsy    1234
+    Open My Profile
+    Sleep    5s
+    Capture Page Screenshot
+
+TC-HR-71
+    login to ECMS   hsy     1234
+    Open My Profile
+    Sleep   3s
+    Click Element   xpath=//*[@id="edit-button"]
+    Sleep   3s
+    Click Element     id=department
+    Sleep   3s
+    Clear Element Text    id=department
+    Sleep   3s
+    Input Text       id=department    Managers
+    Sleep   3s
+    Scroll Element Into View    xpath=//*[@id="submit"]
+    Click Element   xpath=//*[@id="submit"]
+    Sleep   3s
+
+
+TC-HR-72
+    login to ECMS   hsy     1234
+    Open My Profile
+    Sleep   3s
+    Click Element   xpath=//*[@id="edit-button"]
+    Sleep   3s
+    Scroll Element Into View    xpath=//*[@id="submit"]
+    Sleep   3s
+    Click Element     id=tel
+    Sleep   3s
+    Clear Element Text    id=tel
+    Sleep   3s
+    Input Text  id=tel  ${EMPTY}
+    Click Element   xpath=//*[@id="submit"]
+    Sleep   3s
+    #Capture Page Screenshot
+    Sleep   3s
 
