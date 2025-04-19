@@ -651,6 +651,7 @@ TC-HR-54
     Click Element    courses
     Wait Until Element Is Visible    course
     Click Element    course
+    Wait Until Element Is Visible    all
     Click Element    all
     Capture and Close
 
