@@ -35,7 +35,7 @@ Open My Profile
     Click Element    id=my-profile
 
 Capture and Close
-    Sleep    3s
+    Sleep    1s
     Capture Page Screenshot
     Sleep    1s
     Close Browser
