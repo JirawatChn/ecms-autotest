@@ -29,14 +29,8 @@ Check Value By ID
 Open My Profile
     Wait Until Element Is Visible    id=dropdown    10s
     Click Element    id=dropdown
-    Sleep    5s
+    Wait Until Element Is Visible    my-profile
     Click Element    id=my-profile
-
-Open Logout
-    Wait Until Element Is Visible    id=dropdown    10s
-    Click Element    id=dropdown
-    Sleep    5s
-    Click Element    id=logout
 
 Capture and Close
     Sleep    3s

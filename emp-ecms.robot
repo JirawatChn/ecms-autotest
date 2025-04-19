@@ -8,23 +8,23 @@ Resource     ./keywords.robot
 *** Test Cases ***
 TC-EMP-01
     Login to ECMS    emp    admin
-    Close Browser
+    Capture and Close
 TC-EMP-02
     Open Browser    http://localhost:3000/ecms/login    chrome
     Maximize Browser Window
     Input Text    email    emp
     Click Element    submit
-    Close Browser
+    Capture and Close
 
 TC-EMP-03
     Login to ECMS    emp    1234
-    Close Browser
+    Capture and Close
 
 TC-EMP-04
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    details
     Click Element    details
-    Close Browser
+    Capture and Close
 
 TC-EMP-05
     Login to ECMS    emp    admin
@@ -40,78 +40,82 @@ TC-EMP-05
     Check Value By ID    firstTrainingDate  2022-11-30
     Check Value By ID    expiryDate         2026-04-13
     Check Value By ID    nextExpiryDate    363
-    Close Browser
+    Capture and Close
 
 TC-EMP-06
     Open Browser    http://localhost:3000/ecms/emp/details    chrome
-    Close Browser
+    Capture and Close
 
 TC-EMP-07
     Login to ECMS    emp    admin
     Click Element    logout
-    Close Browser
+    Capture and Close
 
-TC-EMP-08 - TC-EMP-11
-    Login to ECMS    emp    admin
-    Wait Until Element Is Visible    empId
-    Element Text Should Be    empId   ID: EMP002
-    Element Text Should Be    empName   jirawat
-    Element Text Should Be    department    แผนก: aaa
-    Element Text Should Be    tel    หมายเลขโทรศัพท์: 0811111111
-    Element Text Should Be    email    อีเมล: emp
-    Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก:2022-11-30
-    Element Text Should Be    expiryDate   วันหมดอายุการอบรม:2026-04-13
-    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 11 เดือน 28 วัน
-    Element Text Should Be    courseId       รหัสคอร์ส: Test-001
-    Element Text Should Be    courseName   ชื่อคอร์ส: test
-    Element Text Should Be    trainingDate    วันที่อบรมสำเร็จ:2025-04-03
-    Element Text Should Be    result    กำลังตรวจสอบ
-    Element Text Should Be    courseId-0           C012
-    Element Text Should Be    sessionId-0          S001
-    Element Text Should Be    courseName-0         Test API	
-    Element Text Should Be    trainingDate-0       2025-04-30
-    Element Text Should Be    periods-0            23
-    Element Text Should Be    trainingLocation-0   23
-    Close Browser
-
-# TC-EMP-08
+# TC-EMP-08 - TC-EMP-11
 #     Login to ECMS    emp    admin
+#     Wait Until Element Is Visible    empId
 #     Element Text Should Be    empId   ID: EMP002
 #     Element Text Should Be    empName   jirawat
 #     Element Text Should Be    department    แผนก: aaa
-#     Element Text Should Be    tel    หมายเลขโทรศัพท์: 11111
+#     Element Text Should Be    tel    หมายเลขโทรศัพท์: 0811111111
 #     Element Text Should Be    email    อีเมล: emp
-
-# TC-EMP-09
-#     Login to ECMS    emp    admin
-#     Sleep    2s
-#     Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก: 2022-11-30
-#     Element Text Should Be    expiryDate   วันหมดอายุการอบรม: 2026-04-13
-#     Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 363 วัน
-
-# TC-EMP-10
-#     Login to ECMS    emp    admin
-#     Sleep    2s
+#     Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก:2022-11-30
+#     Element Text Should Be    expiryDate   วันหมดอายุการอบรม:2026-04-13
+#     Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 11 เดือน 28 วัน
 #     Element Text Should Be    courseId       รหัสคอร์ส: Test-001
 #     Element Text Should Be    courseName   ชื่อคอร์ส: test
 #     Element Text Should Be    trainingDate    วันที่อบรมสำเร็จ:2025-04-03
 #     Element Text Should Be    result    กำลังตรวจสอบ
-
-# TC-EMP-11
-#     Login to ECMS    emp    admin 
-#     Sleep    2s
 #     Element Text Should Be    courseId-0           C012
 #     Element Text Should Be    sessionId-0          S001
 #     Element Text Should Be    courseName-0         Test API	
 #     Element Text Should Be    trainingDate-0       2025-04-30
 #     Element Text Should Be    periods-0            23
 #     Element Text Should Be    trainingLocation-0   23
+#     Capture and Close
+
+TC-EMP-08
+    Login to ECMS    emp    admin
+    Element Text Should Be    empId   ID: EMP002
+    Element Text Should Be    empName   jirawat
+    Element Text Should Be    department    แผนก: aaa
+    Element Text Should Be    tel    หมายเลขโทรศัพท์: 11111
+    Element Text Should Be    email    อีเมล: emp
+    Capture and Close
+
+TC-EMP-09
+    Login to ECMS    emp    admin
+    Sleep    2s
+    Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก: 2022-11-30
+    Element Text Should Be    expiryDate   วันหมดอายุการอบรม: 2026-04-13
+    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 363 วัน
+    Capture and Close
+
+TC-EMP-10
+    Login to ECMS    emp    admin
+    Sleep    2s
+    Element Text Should Be    courseId       รหัสคอร์ส: Test-001
+    Element Text Should Be    courseName   ชื่อคอร์ส: test
+    Element Text Should Be    trainingDate    วันที่อบรมสำเร็จ:2025-04-03
+    Element Text Should Be    result    กำลังตรวจสอบ
+    Capture and Close
+
+TC-EMP-11
+    Login to ECMS    emp    admin 
+    Sleep    2s
+    Element Text Should Be    courseId-0           C012
+    Element Text Should Be    sessionId-0          S001
+    Element Text Should Be    courseName-0         Test API	
+    Element Text Should Be    trainingDate-0       2025-04-30
+    Element Text Should Be    periods-0            23
+    Element Text Should Be    trainingLocation-0   23
+    Capture and Close
 
 TC-EMP-12
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    course
     Click Element    course
-    Close Browser
+    Capture and Close
 
 TC-EMP-13
     Login to ECMS    emp    admin
@@ -123,7 +127,7 @@ TC-EMP-13
     Click Element    select-1
     Sleep    3s
     Click Element    register
-    Close Browser
+    Capture and Close
 
 TC-EMP-14
     Login to ECMS    emp    admin
@@ -133,7 +137,7 @@ TC-EMP-14
     Click Element    open-0
     Sleep    3s
     Click Element    register
-    Close Browser
+    Capture and Close
 
 TC-EMP-15
     Login to ECMS    emp    admin
@@ -145,7 +149,7 @@ TC-EMP-15
     Click Element    select-0
     Sleep    3s
     Click Element    register
-    Close Browser
+    Capture and Close
 
 TC-EMP-16
     Login to ECMS    emp    admin
@@ -153,7 +157,7 @@ TC-EMP-16
     Click Element    course
     Sleep    3s
     Click Element    open-0
-    Close Browser
+    Capture and Close
 
 TC-EMP-17
     Login to ECMS    emp    admin
@@ -161,13 +165,13 @@ TC-EMP-17
     Click Element    course
     Sleep    3s
     Click Element    add-remove
-    Close Browser
+    Capture and Close
 
 TC-EMP-18
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    trainings
     Click Element    trainings
-    Close Browser
+    Capture and Close
 
 TC-EMP-19
     Login to ECMS    emp    admin
@@ -179,7 +183,7 @@ TC-EMP-19
     Element Text Should Be    courseName-0    Test API
     Element Text Should Be    trainingLocation-0    23
     Element Text Should Be    trainingDate-0    2025-04-30
-    Close Browser
+    Capture and Close
 
 TC-EMP-20
     Login to ECMS    emp    admin
@@ -187,7 +191,7 @@ TC-EMP-20
     Click Element    trainings
     Sleep    3s
     Click Element    open-0
-    Close Browser
+    Capture and Close
 
 TC-EMP-21
     Login to ECMS    emp    admin
@@ -203,7 +207,7 @@ TC-EMP-21
     Check Value By ID    trainingLocation    23
     Check Value By ID    trainingDate    2025-04-30
     Check Value By ID    periods    23
-    Close Browser
+    Capture and Close
     
 TC-EMP-22
     Login to ECMS    emp    admin
@@ -211,7 +215,7 @@ TC-EMP-22
     Click Element    trainings
     Sleep    3s
     Click Element    history
-    Close Browser
+    Capture and Close
 
 TC-EMP-23
     Login to ECMS    emp    admin
@@ -225,7 +229,7 @@ TC-EMP-23
     Element Text Should Be    courseName-0    Fundamental 2
     Element Text Should Be    trainingDate-0    2025-03-27
     Element Text Should Be    status-0    ไม่ผ่าน
-    Close Browser
+    Capture and Close
 
 TC-EMP-24
     Login to ECMS    emp    admin
@@ -234,7 +238,7 @@ TC-EMP-24
     Sleep    3s
     Click Element    history
     Click Button    open-0
-    Close Browser
+    Capture and Close
 
 TC-EMP-25
     Login to ECMS    emp    admin
@@ -254,7 +258,7 @@ TC-EMP-25
     Check Value By ID    periods    9.00 - 10.00
     Check Value By ID    status    fail
     Check Value By ID    approvedDate    2025-03-27
-    Close Browser
+    Capture and Close
 
 TC-EMP-26
     Login to ECMS    emp    admin
@@ -265,14 +269,14 @@ TC-EMP-26
     Click Button    open-0
     Sleep    2s
     Element Should Be Disabled    reqId
-    Close Browser
+    Capture and Close
 
 TC-EMP-27
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
-    Close Browser
+    Capture and Close
 
 TC-EMP-28
     Login to ECMS    emp    admin
@@ -285,7 +289,7 @@ TC-EMP-28
     Element Text Should Be    createdAt-4    2024-11-30
     Element Text Should Be    amount-4    1999
     Element Text Should Be    status-4    ไม่อนุมัติ
-    Close Browser
+    Capture and Close
 
 TC-EMP-29
     Login to ECMS    emp    admin
@@ -293,7 +297,7 @@ TC-EMP-29
     Click Element    reimbursement
     Sleep    3s
     Click Button    request
-    Close Browser
+    Capture and Close
 
 TC-EMP-30
     Login to ECMS    emp    admin
@@ -306,7 +310,7 @@ TC-EMP-30
     Input Text    bankAccount    1111
     Input Text    amount    1111
     Click Element    submit
-    Close Browser
+    Capture and Close
 
 TC-EMP-31
     Login to ECMS    emp    admin
@@ -316,7 +320,7 @@ TC-EMP-31
     Click Button    request
     Sleep    2s
     Click Element    submit
-    Close Browser
+    Capture and Close
 
 TC-EMP-32
     Login to ECMS    emp    admin
@@ -336,13 +340,13 @@ TC-EMP-32
     Check Value By ID    amount    1999
     Check Value By ID    status    denied
     Check Value By ID    approvedDate    2024-11-30
-    Close Browser
+    Capture and Close
 
 TC-EMP-33
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    manage
     Click Element    manage
-    Close Browser
+    Capture and Close
 
 TC-EMP-34
     Login to ECMS    emp    admin
@@ -355,7 +359,7 @@ TC-EMP-34
     Element Text Should Be    periods-0    23
     Element Text Should Be    trainingLocation-0    23
     Element Text Should Not Be    status-0    รอยืนยันการถอน
-    Close Browser
+    Capture and Close
 
 TC-EMP-35 - TC-EMP-36
     Login to ECMS    emp    admin
@@ -365,7 +369,7 @@ TC-EMP-35 - TC-EMP-36
     Click Button    delete-0
     Sleep    1s
     Click Button    cancel
-    Close Browser
+    Capture and Close
 
 TC-EMP-37
     Login to ECMS    emp    admin
@@ -375,7 +379,7 @@ TC-EMP-37
     Click Button    delete-0
     Sleep    1s
     Click Button    confirm
-    Close Browser
+    Capture and Close
 
 TC-EMP-38
     Login to ECMS    emp    admin
@@ -383,12 +387,12 @@ TC-EMP-38
     Click Element    manage
     Sleep    2s
     Click Button    add-course
-    Close Browser
+    Capture and Close
 
 TC-EMP-39
     Login to ECMS    emp    admin
     Wait Until Element Is Visible    manage
     Click Element    manage
     Sleep    2s
-    Close Browser
+    Capture and Close
     
