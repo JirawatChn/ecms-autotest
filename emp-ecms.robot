@@ -113,7 +113,7 @@ TC-EMP-11
 
 TC-EMP-12
     Login to ECMS    emp    admin
-    Sleep    20s
+    Sleep    2s
     Wait Until Element Is Visible    course
     Click Element    course
     Capture and Close
