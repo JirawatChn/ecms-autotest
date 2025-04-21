@@ -41,8 +41,8 @@ TC-EMP-05
     Check Value By ID    tel                0811111111
     Check Value By ID    cardId             100000000000
     Check Value By ID    firstTrainingDate  2025-04-18
-    Check Value By ID    expiryDate         2026-04-13
-    Check Value By ID    nextExpiryDate     11 เดือน 25 วัน
+    Check Value By ID    expiryDate         2026-04-21
+    Check Value By ID    nextExpiryDate     1 ปี
     Capture and Close
 
 TC-EMP-06
@@ -92,9 +92,9 @@ TC-EMP-09
     Sleep    2s
     Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก:2025-04-18
     Sleep    2s
-    Element Text Should Be    expiryDate   วันหมดอายุการอบรม:2026-04-13
+    Element Text Should Be    expiryDate   วันหมดอายุการอบรม:2026-04-21
     Sleep    2s
-    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 11 เดือน 25 วัน
+    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก:1 ปี
     Sleep    2s
     Capture and Close
 

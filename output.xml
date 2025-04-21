@@ -1,144 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-20T21:57:01.207218" rpa="false" schemaversion="5">
-<suite id="s1" name="Emp-Ecms" source="c:\Users\khanc\Learning\CSI\project-robot\ecms-autotest\emp-ecms.robot">
-<test id="s1-t1" name="TC-EMP-09" line="90">
-<kw name="Login to ECMS" owner="keywords">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-20T21:57:01.395188" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000016E35609010&gt;</msg>
-<var>${chrome options}</var>
-<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
-<arg>sys, selenium.webdriver</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-20T21:57:01.394840" elapsed="0.001747"/>
-</kw>
-<kw name="Call Method" owner="BuiltIn">
-<arg>${chrome options}</arg>
-<arg>add_argument</arg>
-<arg>--incognito</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-04-20T21:57:01.396759" elapsed="0.000211"/>
-</kw>
-<kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:01.397347" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<arg>Chrome</arg>
-<arg>options=${chrome options}</arg>
-<doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-04-20T21:57:01.397094" elapsed="1.149649"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:02.547278" level="INFO">Opening url 'http://localhost:3000/ecms/login'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-04-20T21:57:02.547035" elapsed="1.050690"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-20T21:57:03.597946" elapsed="0.031131"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:03.629638" level="INFO">Typing text 'emp' into text field 'email'.</msg>
-<arg>email</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-20T21:57:03.629285" elapsed="0.071888"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:03.701698" level="INFO">Typing password into text field 'password'.</msg>
-<msg time="2025-04-20T21:57:03.726377" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>password</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-20T21:57:03.701414" elapsed="0.062413"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:03.764274" level="INFO">Clicking element 'submit'.</msg>
-<arg>submit</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-20T21:57:03.764057" elapsed="0.071370"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-20T21:57:04.336437" level="INFO">Slept 500 milliseconds.</msg>
-<arg>0.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-20T21:57:03.835660" elapsed="0.501112"/>
-</kw>
-<arg>emp</arg>
-<arg>admin</arg>
-<status status="PASS" start="2025-04-20T21:57:01.394248" elapsed="2.942719"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-20T21:57:06.339784" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-20T21:57:04.338860" elapsed="2.001850"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:06.342685" level="INFO">Verifying element 'firstTrainingDate' contains exact text 'วันที่อบรมครั้งแรก:2025-04-18'.</msg>
-<arg>firstTrainingDate</arg>
-<arg>วันที่อบรมครั้งแรก:2025-04-18</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-04-20T21:57:06.342225" elapsed="0.030843"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-20T21:57:08.374873" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-20T21:57:06.374013" elapsed="2.001304"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:08.377877" level="INFO">Verifying element 'expiryDate' contains exact text 'วันหมดอายุการอบรม:2026-04-13'.</msg>
-<arg>expiryDate</arg>
-<arg>วันหมดอายุการอบรม:2026-04-13</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-04-20T21:57:08.377287" elapsed="0.018714"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-20T21:57:10.397468" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-20T21:57:08.396555" elapsed="2.001271"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:10.398985" level="INFO">Verifying element 'nextExpiryDate' contains exact text 'อบรมครั้งถัดไปอีก: 11 เดือน 25 วัน'.</msg>
-<arg>nextExpiryDate</arg>
-<arg>อบรมครั้งถัดไปอีก: 11 เดือน 25 วัน</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-04-20T21:57:10.398715" elapsed="0.013330"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-20T21:57:12.412787" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-20T21:57:10.412471" elapsed="2.000522"/>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-21T16:10:01.428438" rpa="false" schemaversion="5">
+<suite id="s1" name="Previews" source="c:\Users\khanc\Learning\CSI\project-robot\ecms-autotest\previews.robot">
+<test id="s1-t1" name="TC-HR-67" line="382">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-21T16:10:01.616510" level="INFO">Opening browser 'edge' to base url 'http://localhost:3000/ecms/hr/dashboard'.</msg>
+<arg>http://localhost:3000/ecms/hr/dashboard</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-21T16:10:01.616185" elapsed="2.222484"/>
 </kw>
 <kw name="Capture and Close" owner="keywords">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-20T21:57:13.414819" level="INFO">Slept 1 second.</msg>
+<msg time="2025-04-21T16:10:04.841775" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-20T21:57:12.414138" elapsed="1.000941"/>
+<status status="PASS" start="2025-04-21T16:10:03.841231" elapsed="1.001943"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-04-20T21:57:13.634953" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-21T16:10:04.922736" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-04-20T21:57:13.415272" elapsed="0.220220"/>
+<status status="PASS" start="2025-04-21T16:10:04.843703" elapsed="0.079277"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-20T21:57:14.637368" level="INFO">Slept 1 second.</msg>
+<msg time="2025-04-21T16:10:05.924088" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-20T21:57:13.636115" elapsed="1.001989"/>
+<status status="PASS" start="2025-04-21T16:10:04.923129" elapsed="1.001465"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-20T21:57:14.638597" elapsed="2.151384"/>
+<status status="PASS" start="2025-04-21T16:10:05.925118" elapsed="2.170659"/>
 </kw>
-<status status="PASS" start="2025-04-20T21:57:12.413537" elapsed="4.376921"/>
+<status status="PASS" start="2025-04-21T16:10:03.840616" elapsed="4.255593"/>
 </kw>
-<status status="PASS" start="2025-04-20T21:57:01.393686" elapsed="15.398275"/>
+<status status="PASS" start="2025-04-21T16:10:01.615439" elapsed="6.481989"/>
 </test>
 <doc>Robot Framework test suite for ECMS</doc>
-<status status="PASS" start="2025-04-20T21:57:01.210284" elapsed="15.583549"/>
+<status status="PASS" start="2025-04-21T16:10:01.431382" elapsed="6.668651"/>
 </suite>
 <statistics>
 <total>
@@ -147,7 +45,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Emp-Ecms" id="s1" pass="1" fail="0" skip="0">Emp-Ecms</stat>
+<stat name="Previews" id="s1" pass="1" fail="0" skip="0">Previews</stat>
 </suite>
 </statistics>
 <errors>
