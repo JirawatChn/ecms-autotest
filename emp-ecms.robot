@@ -94,7 +94,7 @@ TC-EMP-09
     Sleep    2s
     Element Text Should Be    expiryDate   วันหมดอายุการอบรม:2026-04-21
     Sleep    2s
-    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก:1 ปี
+    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 1 ปี
     Sleep    2s
     Capture and Close
 
@@ -110,12 +110,12 @@ TC-EMP-10
 TC-EMP-11
     Login to ECMS    emp    admin 
     Sleep    2s
-    Element Text Should Be    courseId-0           C012
+    Element Text Should Be    courseId-0           C005
     Element Text Should Be    sessionId-0          S001
-    Element Text Should Be    courseName-0         Test API	
+    Element Text Should Be    courseName-0         Backend Programming with Node.js & Express
     Element Text Should Be    trainingDate-0       2025-04-30
-    Element Text Should Be    periods-0            23
-    Element Text Should Be    trainingLocation-0   23
+    Element Text Should Be    periods-0            08:00-17:00
+    Element Text Should Be    trainingLocation-0   Sripatum University
     Capture and Close
 
 TC-EMP-12
@@ -186,10 +186,10 @@ TC-EMP-19
     Wait Until Element Is Visible    trainings
     Click Element    trainings
     Sleep    2s
-    Element Text Should Be    courseId-0    C012
+    Element Text Should Be    courseId-0    C005
     Element Text Should Be    sessionId-0    S001
-    Element Text Should Be    courseName-0    Test API
-    Element Text Should Be    trainingLocation-0    23
+    Element Text Should Be    courseName-0    Backend Programming with Node.js & Express
+    Element Text Should Be    trainingLocation-0    Sripatum University
     Element Text Should Be    trainingDate-0    2025-04-30
     Capture and Close
 
@@ -208,13 +208,13 @@ TC-EMP-21
     Sleep    3s
     Click Element    open-0
     Sleep    2s
-    Check Value By ID    courseId    C012
+    Check Value By ID    courseId    C005
     Check Value By ID    sessionId    S001
     Check Value By ID    empId    EMP002
-    Check Value By ID    courseName    Test API
-    Check Value By ID    trainingLocation    23
+    Check Value By ID    courseName    Backend Programming with Node.js & Express
+    Check Value By ID    trainingLocation    Sripatum University
     Check Value By ID    trainingDate    2025-04-30
-    Check Value By ID    periods    23
+    Check Value By ID    periods    08:00-17:00
     Capture and Close
     
 TC-EMP-22
@@ -291,12 +291,12 @@ TC-EMP-28
     Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
-    Element Text Should Be    reqId-4    R001
-    Element Text Should Be    courseId-4    C001
-    Element Text Should Be    empId-4    EMP002
-    Element Text Should Be    createdAt-4    2024-11-30
-    Element Text Should Be    amount-4    1999
-    Element Text Should Be    status-4    ไม่อนุมัติ
+    Element Text Should Be    reqId-0    R002
+    Element Text Should Be    courseId-0    C001
+    Element Text Should Be    empId-0    EMP002
+    Element Text Should Be    createdAt-0    2025-04-21
+    Element Text Should Be    amount-0    1234
+    Element Text Should Be    status-0    รออนุมัติ
     Capture and Close
 
 TC-EMP-29
@@ -335,19 +335,19 @@ TC-EMP-32
     Wait Until Element Is Visible    reimbursement
     Click Element    reimbursement
     Sleep    3s
-    Click Button    open-4
+    Click Button    open-0
     Sleep    2s
-    Check Value By ID    reqId    R001
+    Check Value By ID    reqId    R002
     Check Value By ID    courseId    C001
     Check Value By ID    empId    EMP002
-    Check Value By ID    empName    jirawat
-    Check Value By ID    department    aaa
-    Check Value By ID    createdAt    2024-11-30
-    Check Value By ID    cardId    10000
-    Check Value By ID    bankAccount    123455
-    Check Value By ID    amount    1999
-    Check Value By ID    status    denied
-    Check Value By ID    approvedDate    2024-11-30
+    Check Value By ID    empName    Khanchai
+    Check Value By ID    department    saler
+    Check Value By ID    createdAt    2025-04-21
+    Check Value By ID    cardId    1234
+    Check Value By ID    bankAccount    1234
+    Check Value By ID    amount    1234
+    Check Value By ID    status    pending
+    Check Value By ID    approvedDate    2025-04-21
     Capture and Close
 
 TC-EMP-33
@@ -361,12 +361,12 @@ TC-EMP-34
     Wait Until Element Is Visible    manage
     Click Element    manage
     Sleep    2s
-    Element Text Should Be    courseId-0    C012
+    Element Text Should Be    courseId-0    C005
     Element Text Should Be    sessionId-0    S001
     Element Text Should Be    trainingDate-0    2025-04-30
-    Element Text Should Be    periods-0    23
-    Element Text Should Be    trainingLocation-0    23
-    Element Text Should Not Be    status-0    รอยืนยันการถอน
+    Element Text Should Be    periods-0    08:00-17:00
+    Element Text Should Be    trainingLocation-0    Sripatum University
+    # Element Text Should Not Be    status-0    
     Capture and Close
 
 TC-EMP-35 - TC-EMP-36

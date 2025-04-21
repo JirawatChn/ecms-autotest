@@ -98,26 +98,26 @@ TC-HR-10
     Login to ECMS    hsy    1234
     Wait Until Element Is Visible    emp
     Click Element    emp
-    Wait Until Element Is Visible    open-0
-    Click Button    open-0
+    Wait Until Element Is Visible    open-1
+    Click Button    open-1
     Sleep    2s
     Check Value By ID    empId    EMP002
-    Check Value By ID    department    aaa
-    Check Value By ID    empName    jirawat
-    Check Value By ID    cardId    emp
-    Check Value By ID    email    emp
+    Check Value By ID    department    saler
+    Check Value By ID    empName    Khanchai
+    Check Value By ID    cardId    100000000000
+    Check Value By ID    email    Khanchai.pat@spumail.net
     Check Value By ID    tel    0811111111
     Check Value By ID    roles    Emp
-    Check Value By ID    firstTrainingDate    2022-11-30
-    Check Value By ID    expiryDate    2026-04-13
-    Check Value By ID    trainingDuration    13 วัน
-    Check Value By ID    nextExpiryDate    11 เดือน 28 วัน
-    Element Text Should Be    courseId-0    C012
+    Check Value By ID    firstTrainingDate    2025-04-18
+    Check Value By ID    expiryDate    2026-04-21
+    Check Value By ID    trainingDuration    วันนี้
+    Check Value By ID    nextExpiryDate    1 ปี
+    Element Text Should Be    courseId-0    C005
     Element Text Should Be    sessionId-0          S001
-    Element Text Should Be    courseName-0         Test API	
+    Element Text Should Be    courseName-0         Backend Programming with Node.js & Express	
     Element Text Should Be    trainingDate-0       2025-04-30
-    Element Text Should Be    periods-0            23
-    Element Text Should Be    trainingLocation-0   23
+    Element Text Should Be    periods-0            08:00-17:00
+    Element Text Should Be    trainingLocation-0   Sripatum University
     Capture and Close
 
 TC-HR-11
@@ -255,7 +255,7 @@ TC-HR-22
     Click Element    modal-approve
     Capture and Close
 
-TC-HR-23
+TC-HR-24
     Login to ECMS    hsy    1234  
     Wait Until Element Is Visible    requests
     Click Element    requests
@@ -265,7 +265,8 @@ TC-HR-23
     Click Element    open-0
     Wait Until Element Is Visible    deny
     Click Element    deny
-    Wait Until Element Is Visible    modal-deny
+    Wait Until Element Is Visible    modal-remark
+    Input Text    modal-remark    ไม่อนุมัติ
     Click Element    modal-deny
     Capture and Close
 
@@ -329,15 +330,15 @@ TC-HR-29
     Wait Until Element Is Visible    open-0
     Click Element    open-0
     Sleep    1s
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/p[1]    วันที่ส่งคำร้อง: 2025-04-16
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/p[2]    รหัสคำร้อง: R004
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/p[3]    รหัสคอร์ส: C006
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div[2]    1111
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/p[1]    วันที่ส่งคำร้อง: 2025-04-21
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/p[2]    รหัสคำร้อง: R002
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/p[3]    รหัสคอร์ส: C001
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div[2]    1234
     Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[1]    รหัสพนักงาน: EMP002
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[2]    ชื่อผู้อบรม: jirawat
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[3]    แผนกที่สังกัด: aaa
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[4]    เลขประจำตัวประชาชน: 1111
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[5]    เลขที่บัญชีเงินฝากธนาคาร: 1111
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[2]    ชื่อผู้อบรม: Khanchai
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[3]    แผนกที่สังกัด: saler
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[4]    เลขประจำตัวประชาชน: 1234
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[5]    เลขที่บัญชีเงินฝากธนาคาร: 1234
     Capture and Close
 
 TC-HR-30
@@ -428,17 +429,17 @@ TC-HR-37
     Wait Until Element Is Visible    open-0
     Click Element    open-0
     Sleep    1s
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[1]    วันที่ส่งคำร้อง: 2025-03-28
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[2]   รหัส: R2-S006-EMP002
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[3]     รหัสคอร์ส: Test-001
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[4]    ชื่อคอร์ส: test
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[5]    รอบ: S006
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/p[1]    วันที่อบรม: 2025-04-03
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/p[2]    เวลาอบรม: 123
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/p[3]    สถานที่อบรม: 123
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[1]    วันที่ส่งคำร้อง: 2025-04-21
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[2]   รหัส: R7-S001-EMP002
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[3]     รหัสคอร์ส: C010
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[4]    ชื่อคอร์ส: Financial Data Analysis with Python & APIs
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[1]/p[5]    รอบ: S001
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/p[1]    วันที่อบรม: 2025-04-22
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/p[2]    เวลาอบรม: 08:00-17:00
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[1]/div/div/div/div[2]/p[3]    สถานที่อบรม: Sripatum University
     Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[1]    รหัสพนักงาน: EMP002
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[2]    ชื่อผู้อบรม: aaa
-    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[3]    แผนกที่สังกัด: aaa
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[2]    ชื่อผู้อบรม: Khanchai
+    Element Text Should Be    xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div[2]/div/div/p[3]    แผนกที่สังกัด: saler
     Capture and Close
     
 TC-HR-38
@@ -737,14 +738,14 @@ TC-HR-61
     Wait Until Element Is Visible    detail-0
     Click Button    detail-0
     Sleep    1s
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/p[1]    รหัสคอร์ส: Test
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/p[2]    ชื่อคอร์ส: Tset
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[1]    รอบ: S003
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[2]    จำนวนที่นั่ง: 99
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[3]    จำนวนชั่วโมงอบรม: 10
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[4]    เวลาอบรม: test
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[5]    สถานที่อบรม: test
-    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[6]    วันที่อบรม: 2026-05-18
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/p[1]    รหัสคอร์ส: C002
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/p[2]    ชื่อคอร์ส: Financial Modeling with Excel
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[1]    รอบ: S001
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[2]    จำนวนที่นั่ง: 10
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[3]    จำนวนชั่วโมงอบรม: 8
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[4]    เวลาอบรม: 08:00-17:00
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[5]    สถานที่อบรม: Sripatum University
+    Element Text Should Be  xpath=//*[@id="content-wrapper"]/div[2]/div/div/div[2]/div/div/div/div/p[6]    วันที่อบรม: 2025-04-25
     Capture and Close
 
 TC-HR-62
