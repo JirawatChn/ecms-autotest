@@ -22,8 +22,11 @@ TC-EMP-03
 
 TC-EMP-04
     Login to ECMS    emp    admin
+    Sleep    3s
     Wait Until Element Is Visible    details
+    Sleep    3s
     Click Element    details
+    Sleep    3s
     Capture and Close
 
 TC-EMP-05
@@ -32,14 +35,14 @@ TC-EMP-05
     Click Element    details
     Sleep    2s
     Check Value By ID    empId              EMP002
-    Check Value By ID    empName            jirawat
-    Check Value By ID    department         aaa
-    Check Value By ID    email              emp
-    Check Value By ID    tel                11111
-    Check Value By ID    cardId             emp
-    Check Value By ID    firstTrainingDate  2022-11-30
+    Check Value By ID    empName            Khanchai
+    Check Value By ID    department         saler
+    Check Value By ID    email              Khanchai.pat@spumail.net
+    Check Value By ID    tel                0811111111
+    Check Value By ID    cardId             100000000000
+    Check Value By ID    firstTrainingDate  2025-04-18
     Check Value By ID    expiryDate         2026-04-13
-    Check Value By ID    nextExpiryDate    363
+    Check Value By ID    nextExpiryDate     11 เดือน 25 วัน
     Capture and Close
 
 TC-EMP-06
@@ -77,27 +80,31 @@ TC-EMP-07
 TC-EMP-08
     Login to ECMS    emp    admin
     Element Text Should Be    empId   ID: EMP002
-    Element Text Should Be    empName   jirawat
-    Element Text Should Be    department    แผนก: aaa
-    Element Text Should Be    tel    หมายเลขโทรศัพท์: 11111
-    Element Text Should Be    email    อีเมล: emp
+    Element Text Should Be    empName   Khanchai
+    Element Text Should Be    department    แผนก: saler
+    Element Text Should Be    tel    หมายเลขโทรศัพท์: 0811111111
+    Element Text Should Be    email    อีเมล: Khanchai.pat@spumail.net
+    Sleep    3s
     Capture and Close
 
 TC-EMP-09
     Login to ECMS    emp    admin
     Sleep    2s
-    Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก: 2022-11-30
-    Element Text Should Be    expiryDate   วันหมดอายุการอบรม: 2026-04-13
-    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 363 วัน
+    Element Text Should Be    firstTrainingDate       วันที่อบรมครั้งแรก:2025-04-18
+    Sleep    2s
+    Element Text Should Be    expiryDate   วันหมดอายุการอบรม:2026-04-13
+    Sleep    2s
+    Element Text Should Be    nextExpiryDate    อบรมครั้งถัดไปอีก: 11 เดือน 25 วัน
+    Sleep    2s
     Capture and Close
 
 TC-EMP-10
     Login to ECMS    emp    admin
     Sleep    2s
-    Element Text Should Be    courseId       รหัสคอร์ส: Test-001
-    Element Text Should Be    courseName   ชื่อคอร์ส: test
-    Element Text Should Be    trainingDate    วันที่อบรมสำเร็จ:2025-04-03
-    Element Text Should Be    result    กำลังตรวจสอบ
+    Element Text Should Be    courseId       รหัสคอร์ส: C012
+    Element Text Should Be    courseName   ชื่อคอร์ส: Test API
+    Element Text Should Be    trainingDate    วันที่อบรมสำเร็จ:2025-04-30
+    Element Text Should Be    result    ไม่ผ่าน
     Capture and Close
 
 TC-EMP-11
